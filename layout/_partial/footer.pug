@@ -1,6 +1,15 @@
 #footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
   a(href=url_for('.'), rel='nofollow')= config.title + '.'
-  |  Powered by
+  if theme.busuanzi == true
+        script(src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)
+        div
+          span#busuanzi_container_site_pv= '本站 '
+            span#busuanzi_value_site_pv
+            span= ' ' + __('次访问')
+          span#busuanzi_container_site_uv= '. '
+            span#busuanzi_value_site_uv
+            span= ' ' + __('个访客')
+  | Powered by
   a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
   a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
   |  by
