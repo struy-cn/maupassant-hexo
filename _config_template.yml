@@ -1,3 +1,5 @@
+# Plase copy this file to site root directory,and rename to "_config.maupassant.yml"
+
 disqus:
   enable: false ## If you want to use Disqus comment system, please set the value to true.
   shortname: ## Your disqus_shortname, e.g. username
